@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/YelaVelez-Examen/public/vista/css/formulario.css">
+    <script src="formulario.js"></script>
+    
+</head>
+<body>
+    <section class="registro" >
+        <h2>Envio de Paquete</h2>
+        <form  class="formulario" name="formulario_registro"  method="POST" action = "../../controladores/enviarPaquete.php">
+            <input class="controles" type="text" name="cedulaR" id="n1" placeholder="Ingrese la Cedula del Remitente..." >
+            <span id="mensajeCedula" ></span><br>
+
+            <input class="controles" type="text" name="cedula" id="n1" placeholder="Ingrese la Cedula del Destinatario..." >
+            <span id="mensajeCedula" ></span><br>
+
+            <input class="controles" type="text" name="descripcion" id="n1" placeholder="Ingrese la descripcion..." >
+            <span id="mensajedireccion" ></span><br>
+
+            <input class="controles" type="text" name="direccion" id="n2" placeholder="Ingrese la direccion..." >
+
+            <input class="controles" type="text" name="tiempo" id="n1" placeholder="Ingrese el tiempo de entrega estimado..." >
+            <span id="mensajecorreo" ></span><br>
+
+            <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+            <input class="botones" type="submit" value="Registrar" >
+        </form>
+
+    </section>
+    
+</body>
+</html>
