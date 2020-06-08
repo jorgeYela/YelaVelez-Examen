@@ -26,19 +26,19 @@
 
                     <input type="hidden" id="codigo" name="codigo" value="<?php echo $codigo ?>" />
                     <label for="cedula">Fecha Envio(*)</label>
-                    <input type="text" id="fecha_envio" name="fecha_envio" value="<?php echo $row["paq_fecha_envio"]; ?>" required placeholder="Ingrese la cedula ..."/>
+                    <input type="text" id="fecha_envio" name="fecha_envio" value="<?php echo $row["paq_fecha_envio"]; ?>" />
                     <br>
                     <label for="nombres">Descripcion(*)</label>
-                    <input type="text" id="descripcion" name="descripcion" value="<?php echo $row["paq_descripcion"]; ?>" required placeholder="Ingrese los nombres ..."/>
+                    <input type="text" id="descripcion" name="descripcion" value="<?php echo $row["paq_descripcion"]; ?>" />
                     <br>
                     <label for="apellidos">Direccion(*)</label>
-                    <input type="text" id="direccion" name="direccion" value="<?php echo $row["paq_direccion"]; ?>" required placeholder="Ingrese los apellidos ..."/>
+                    <input type="text" id="direccion" name="direccion" value="<?php echo $row["paq_direccion"]; ?>" />
                     <br>
                     <label for="apellidos">Tiempo Entrega(*)</label>
-                    <input type="text" id="tiempoEntrega" name="tiempoEntrega" value="<?php echo $row["pac_tiempo_entrega"]; ?>" required placeholder="Ingrese los apellidos ..."/>
+                    <input type="text" id="tiempoEntrega" name="tiempoEntrega" value="<?php echo $row["paq_tiempo_entrega"]; ?>" />
                     <br>
                     <label for="apellidos">Remitente(*)</label>
-                    <input type="text" id="remitente" name="remitente" value="<?php echo $row["paq_remitente"]; ?>" required placeholder="Ingrese los apellidos ..."/>
+                    <input type="text" id="remitente" name="remitente" value="<?php echo $row["paq_remitente"]; ?>" />
                     <br>
                     <label for="telefono">Estado del Paquete(*)</label>
                     <input type="text" id="estado" name="estado" value="<?php echo $row["paq_estado"]; ?>" required placeholder="Ingrese el estado actual del paquete ..."/>

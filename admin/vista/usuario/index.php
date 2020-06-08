@@ -5,12 +5,19 @@
     <title>Informacion Usuario</title>
 </head>
 <body>
+    <?php
+        session_start();
+        if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE){
+        header("Location: /Practica04-Mi-Agenda-Telefonica/public/vista/html/index.html");
+        }
+    ?>
     <table style="width:100%">
         <tr>
             <th>Cedula</th>
             <th>Nombres</th>
             <th>Apellidos</th>
             <th>Correo</th>
+            <th>Codigo Paquete</th>
             <th>Fecha Envio Paquete</th>
             <th>Paquete Descripcion</th>
             <th>Direccion</th>
@@ -29,12 +36,13 @@
                     echo " <td>" .$row["usu_nombres"] . "</td>";
                     echo " <td>" .$row["usu_apellidos"] . "</td>";
                     echo " <td>" .$row["usu_correo"] . "</td>";
+                    echo " <td>" .$row["paq_codigo"] . "</td>";
                     echo " <td>" .$row["paq_fecha_envio"] . "</td>";
                     echo " <td>" .$row["paq_descripcion"] . "</td>";
                     echo " <td>" .$row["paq_direccion"] . "</td>";
                     echo " <td>" .$row["paq_remitente"] . "</td>";
                     echo " <td>" .$row["paq_estado"] . "</td>";
-                    echo " <td> <a href='modificar.php?codigo=" .$row['paq_codigo'] . "'>Modificar</a> </td>";
+                    echo " <td> <a href='../modificar.php?codigo=" .$row['paq_codigo'] . "'>Modificar</a> </td>";
                     echo "</tr>";
                 }
             } else {

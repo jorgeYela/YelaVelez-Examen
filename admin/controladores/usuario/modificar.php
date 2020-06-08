@@ -18,12 +18,12 @@
         $estado= isset($_POST["estado"]) ? mb_strtoupper(trim($_POST["estado"]), 'UTF-8') : null;
 
         $sql = "UPDATE paquete " .
-            "SET paq_fecha_envio = '$fecha_envio',".
-            "paq_descripcion = '$descripcion',".
-            "paq_direccion = '$direccion',".
-            "paq_tiempo_entrega = '$tiempoEntrega',".
-            "paq_remitente = '$remitente',".
-            "paq_estado = '$estado',".
+            "SET paq_fecha_envio = '$fecha_envio', ".
+            "paq_descripcion = '$descripcion', ".
+            "paq_direccion = '$direccion', ".
+            "paq_tiempo_entrega = '$tiempoEntrega', ".
+            "paq_remitente = '$remitente', ".
+            "paq_estado = '$estado' ".
             "WHERE paq_codigo = $codigo";
         
         if($conn->query($sql) === TRUE) {
